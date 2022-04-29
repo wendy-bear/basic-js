@@ -15,7 +15,7 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function isMAC48Address(n) {
-  let result = [
+  let check = [
     "0",
     "1",
     "2",
@@ -36,8 +36,8 @@ function isMAC48Address(n) {
 
   n = n.split("-").join("");
 
-  for (let element of n) {
-    if (!result.includes(element)) {
+  for (let el of n) {
+    if (!check.includes(el)) {
       return false;
     }
   }

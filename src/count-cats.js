@@ -17,7 +17,9 @@ const { NotImplementedError } = require("../extensions/index.js");
 
 function countCats(arr) {
   let acc = 0;
-  arr.forEach((el) => el.forEach((el) => (el == "^^" ? acc++ : acc)));
+  arr.forEach((el) => 
+  el.forEach((el) => 
+  (el == "^^" ? acc++ : acc)));
 
   return acc;
 }
